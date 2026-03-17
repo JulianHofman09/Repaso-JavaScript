@@ -1,37 +1,37 @@
 //ejercicio 16
 
-const productos = [
+const productos2 = [
     {nombre:"Mouse", precio:10},
     {nombre:"Teclado", precio:25},
     {nombre:"Monitor", precio:200}
 ];
 
-function buscarProducto(productos, nombre) {
+function buscarProducto(productos2, nombre) {
 
-    for (let i = 0; i < productos.length; i++) {
+    for (let i = 0; i < productos2.length; i++) {
 
-        if (productos[i].nombre == nombre) {
-            return productos[i];
+        if (productos2[i].nombre == nombre) {
+            return productos2[i];
         }
 
     }
 
 }
 
-console.log(buscarProducto(productos, "Teclado"));
+console.log(buscarProducto(productos2, "Teclado"));
 
 //ejercicio 17
 
 
-function productosCaros(productos) {
+function productosCaros(productos2) {
 
     let caros = [];
     let j = 0;
 
-    for (let i = 0; i < productos.length; i++) {
+    for (let i = 0; i < productos2.length; i++) {
 
-        if (productos[i].precio > 50) {
-            caros[j] = productos[i];
+        if (productos2[i].precio > 50) {
+            caros[j] = productos2[i];
             j = j + 1;
         }
 
@@ -40,7 +40,7 @@ function productosCaros(productos) {
     return caros;
 }
 
-console.log(productosCaros(productos));
+console.log(productosCaros(productos2));
 
 //ejercicio 18
 
